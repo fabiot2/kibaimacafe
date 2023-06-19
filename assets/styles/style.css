@@ -1,0 +1,188 @@
+:root {
+    --primary-color: #5DAC4F;
+    --verde-enfasis: #5DAC4F;
+    --cafe-principal: #48362B;
+    --cafe-suave: #F0C7A2;
+    --textos-tamano-regular: 1.6rem;
+    --avisos-tamano-pequeno: 1rem;
+    --texto-peso-regular: 400;
+    --aviso-peso-bold: 700;
+    --aviso-family:'World Series PERSONAL USE ONLY', Helvetica, sans-serif;
+    --texto-family:'Montserrat', Helvetica, sans-serif;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--texto-family);
+}
+
+.aviso {
+    font-family: var(--aviso-family);
+}
+
+a {
+    text-decoration: none;
+    color: var(--cafe-suave);
+}
+
+a:visited {
+    color: var(--cafe-suave);
+}
+
+main {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.background__picture {
+    width: 100%;
+    height: 100%;
+    background-image: url('../media/Background-mobile.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row: 1;
+    position: relative;
+}
+
+.background__green {
+    width: 100%;
+    min-height: 3.3rem;
+    padding: 1rem 0;
+    background-color: var(--verde-enfasis);
+    opacity: 0.91;
+    position: absolute;
+    bottom: 0;
+}
+
+.brackground__green-pronto {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.background__green span {
+    color: var(--cafe-suave);
+    opacity: 1;
+    line-height: 1;
+    font-size: 2rem;
+}
+
+.background__green span:nth-child(2) {
+    font-size: var(--avisos-tamano-pequeno);
+}
+
+.information__container {
+    text-align: center;
+    background-color: var(--cafe-principal);
+    color: var(--cafe-suave);
+    height: 100%;
+    width: 100%;
+    display: grid;
+}
+
+
+
+.logo__container .logo {
+    margin-top: 2rem;
+}
+
+.contact__container {
+    width: 18rem;
+    margin: 1rem auto 0 auto;
+}
+
+.contact__title {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.8rem;
+}
+
+.cta__button {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0.4rem 1.2rem;
+    border-radius: 1.8rem;
+    background-color: var(--verde-enfasis);
+}
+
+.contact__icon {
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 0.6rem;
+}
+
+.icon__whatsapp {
+    background-image: url('../media/whatsapp.svg');
+}
+
+.icon__phone {
+    background-image: url('../media/phone-solid.svg');
+}
+
+a.cta__button.contact__whatsapp {
+    margin-bottom: 0.6rem;
+}
+
+.follow__container {
+    max-width: 17rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.follow__icon {
+    display: inline-block;
+    width: 2.8rem;
+    height: 2.8rem;
+    background-color: var(--verde-enfasis);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.6rem;
+}
+
+.follow__icon-instagram {
+    background-image: url('../media/instagram.svg');
+}
+
+.follow__icon-facebook {
+    background-image: url('../media/facebook.svg');
+    background-size: 1rem;
+}
+
+footer {
+    width: 100%;
+    min-height: 1rem;
+    background-color: var(--verde-enfasis);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+footer a {
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+}
